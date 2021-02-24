@@ -1,12 +1,10 @@
 @import "../../design-tokens/_mixins";
 
 article {
-  background-color: aliceblue;
   display: flex;
   justify-content: center;
   text-align: center;
-  border: 2px solid red;
-  padding-top: 3rem;
+  padding-top: 2rem;
 
   @include respond(md) {
     padding-top: 0;
@@ -15,14 +13,18 @@ article {
 
 main {
   display: inherit;
-  background-color: cyan;
   justify-content: center;
-  max-width: 19rem;
+  width: 80%;
   padding: 3rem;
-  border: 3px dotted blue;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   // padding: 4rem;
 
   @include respond(md) {
     width: 50%;
   }
+}
+
+input {
+  font-size: 1.3rem !important;
 }

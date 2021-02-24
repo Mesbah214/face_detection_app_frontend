@@ -7,19 +7,19 @@ import Rank from "./Components/Rank/Rank";
 import FaceRecognition from "./Components/FaceRecognition/FaceRecognition";
 import SignIn from "./Components/SignIn/SignIn";
 import Register from "./Components/Register/Register";
-//import Particles from "react-particles-js";
+import Particles from "react-particles-js";
 
-// const particleOptions = {
-//   particles: {
-//     number: {
-//       value: 80,
-//       density: {
-//         enable: true,
-//         value_area: 800,
-//       },
-//     },
-//   },
-// };
+const particleOptions = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+  },
+};
 
 const initialState = {
   input: "",
@@ -120,7 +120,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, box, route } = this.state;
     return (
       <div className="App">
-        {/* <Particles className="particles" params={particleOptions} /> */}
+        <Particles className="particles" params={particleOptions} />
         <div className="topBar">
           <Logo />
           <Navigation
