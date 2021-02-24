@@ -1,4 +1,5 @@
 import React from "react";
+import "./Signin.scss";
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -38,8 +39,8 @@ class SignIn extends React.Component {
     const { onRouteChange } = this.props;
     return (
       <div>
-        <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-          <main className="pa4 black-80">
+        <article className="">
+          <main className="">
             <div className="measure">
               <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
                 <legend className="f1 fw6 ph0 mh0">Sign In</legend>

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navigation.css";
 
 const Navigation = ({ onRouteChange, isSignedIn }) => {
   if (isSignedIn) {
@@ -13,7 +14,22 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       </nav>
     );
   } else {
-    return null;
+    return (
+      <nav className="signin_nav">
+        <p
+          className="f3 link dim black pointer"
+          onClick={() => onRouteChange("signin")}
+        >
+          Sign In
+        </p>
+        <p
+          className="f3 link dim black pointer"
+          onClick={() => onRouteChange("register")}
+        >
+          Register
+        </p>
+      </nav>
+    );
   }
 };
 

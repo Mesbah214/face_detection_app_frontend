@@ -1,0 +1,7 @@
+.signin_nav {
+    display: flex;
+}
+
+.signin_nav p {
+    margin-left: 1rem;
+}

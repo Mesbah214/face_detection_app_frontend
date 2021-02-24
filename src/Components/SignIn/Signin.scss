@@ -1,0 +1,28 @@
+@import "../../design-tokens/_mixins";
+
+article {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid red;
+  padding-top: 3rem;
+
+  @include respond(md) {
+    padding-top: 0;
+  }
+}
+
+main {
+  display: inherit;
+  background-color: cyan;
+  justify-content: center;
+  max-width: 19rem;
+  padding: 3rem;
+  border: 3px dotted blue;
+  // padding: 4rem;
+
+  @include respond(md) {
+    width: 50%;
+  }
+}
